@@ -57,6 +57,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="1.2.html" />
+    
     
     <link rel="prev" href="./" />
     
@@ -92,7 +94,7 @@
                 <a href="../">
             
                     
-                    Introduction
+                    Qt入门教程笔记
             
                 </a>
             
@@ -105,7 +107,7 @@
                 <a href="./">
             
                     
-                    Chapter1
+                    一. Qt和qmake的配置
             
                 </a>
             
@@ -120,6 +122,64 @@
             
                     
                     1. Qmake项目原理和手动配置Qtcreater
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="1.2.html">
+            
+                <a href="1.2.html">
+            
+                    
+                    2. Qmake创建动态和静态链接库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="1.3.html">
+            
+                <a href="1.3.html">
+            
+                    
+                    3. Qmake的版本设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../README_2.html">
+            
+                <a href="../README_2.html">
+            
+                    
+                    二. Qt信号槽机制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Chapter2/2.1.html">
+            
+                <a href="../Chapter2/2.1.html">
+            
+                    
+                    1. Qt信号槽的概念
             
                 </a>
             
@@ -225,6 +285,26 @@ make
 <pre><code>chmod +x make.sh
 </code></pre><p>&#x6267;&#x884C;<code>make.sh</code></p>
 <pre><code>./make.sh
+</code></pre><h2 id="&#x56DB;-&#x52A0;&#x8F7D;&#x5185;&#x90E8;&#x5E93;&#x548C;&#x5934;&#x6587;&#x4EF6;">&#x56DB;. &#x52A0;&#x8F7D;&#x5185;&#x90E8;&#x5E93;&#x548C;&#x5934;&#x6587;&#x4EF6;</h2>
+<p>&#x52A0;&#x8F7D;&#x5185;&#x90E8;&#x5E93;</p>
+<pre><code>&#x5728;.pro&#x6587;&#x4EF6;&#x4E2D;
+QT += core gui
+QT -= gui
+</code></pre><p>&#x52A0;&#x8F7D;&#x5934;&#x6587;&#x4EF6;</p>
+<pre><code>&#x5728;.pro&#x6587;&#x4EF6;&#x4E2D;
+INCLUDEPATH += ../../include
+INCLUDEPATH += &amp;$$PWD/../../include
+</code></pre><blockquote>
+<p>&#x56E0;&#x4E3A;qt&#x751F;&#x6210;&#x7684;&#x6700;&#x7EC8;&#x9879;&#x76EE;&#x6587;&#x4EF6;&#x662F;&#x5728;&#x4E0E;&#x6E90;&#x6587;&#x4EF6;&#x4E0A;&#x7EA7;&#x8DEF;&#x5F84;&#x540C;&#x7EA7;&#x522B;&#x7684;&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x9762;&#x7684;,&#x6240;&#x4EE5;&#x5411;&#x8DEF;&#x5F84;&#x5916;&#x8FD4;&#x56DE;&#x4E24;&#x6B21;,&#x518D;&#x8FDB;&#x5165;include&#x6587;&#x4EF6;&#x5939;
+<code>$$PWD</code>&#x4E3A;.pro&#x6587;&#x4EF6;&#x6240;&#x5728;&#x7684;&#x4F4D;&#x7F6E;</p>
+</blockquote>
+<h2 id="&#x4E94;-&#x5E93;&#x5F15;&#x7528;&#x548C;&#x5E93;&#x8DEF;&#x5F84;&#x6307;&#x5B9A;">&#x4E94;. &#x5E93;&#x5F15;&#x7528;&#x548C;&#x5E93;&#x8DEF;&#x5F84;&#x6307;&#x5B9A;</h2>
+<pre><code>LIBS += -L../../lib -lopencv_world320
+</code></pre><h2 id="&#x516D;-&#x6307;&#x5B9A;&#x8F93;&#x51FA;&#x8DEF;&#x5F84;&#x548C;&#x6587;&#x4EF6;&#x540D;">&#x516D;. &#x6307;&#x5B9A;&#x8F93;&#x51FA;&#x8DEF;&#x5F84;&#x548C;&#x6587;&#x4EF6;&#x540D;</h2>
+<p>&#x6307;&#x5B9A;&#x8DEF;&#x5F84;</p>
+<pre><code>DESTDIR += ../../bin
+</code></pre><p>&#x6307;&#x5B9A;&#x8F93;&#x51FA;&#x6587;&#x4EF6;&#x540D;</p>
+<pre><code>TARGET = filename
 </code></pre>
                                 
                                 </section>
@@ -252,10 +332,14 @@ make
 
             
                 
-                <a href="./" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Chapter1">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 一. Qt和qmake的配置">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="1.2.html" class="navigation navigation-next " aria-label="Next page: 2. Qmake创建动态和静态链接库">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -264,7 +348,7 @@ make
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"1. Qmake项目原理和手动配置Qtcreater","level":"1.2.1","depth":2,"previous":{"title":"Chapter1","level":"1.2","depth":1,"path":"Chapter1/README.md","ref":"Chapter1/README.md","articles":[{"title":"1. Qmake项目原理和手动配置Qtcreater","level":"1.2.1","depth":2,"path":"Chapter1/1.1.md","ref":"Chapter1/1.1.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Chapter1/1.1.md","mtime":"2019-06-01T04:59:07.230Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-01T04:59:18.763Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"1. Qmake项目原理和手动配置Qtcreater","level":"1.2.1","depth":2,"next":{"title":"2. Qmake创建动态和静态链接库","level":"1.2.2","depth":2,"path":"Chapter1/1.2.md","ref":"Chapter1/1.2.md","articles":[]},"previous":{"title":"一. Qt和qmake的配置","level":"1.2","depth":1,"path":"Chapter1/README.md","ref":"Chapter1/README.md","articles":[{"title":"1. Qmake项目原理和手动配置Qtcreater","level":"1.2.1","depth":2,"path":"Chapter1/1.1.md","ref":"Chapter1/1.1.md","articles":[]},{"title":"2. Qmake创建动态和静态链接库","level":"1.2.2","depth":2,"path":"Chapter1/1.2.md","ref":"Chapter1/1.2.md","articles":[]},{"title":"3. Qmake的版本设置","level":"1.2.3","depth":2,"path":"Chapter1/1.3.md","ref":"Chapter1/1.3.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Chapter1/1.1.md","mtime":"2019-06-01T06:27:58.627Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-02T06:59:07.885Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
