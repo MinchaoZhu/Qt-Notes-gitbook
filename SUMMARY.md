@@ -10,4 +10,7 @@
 * [三. QWidget的概念和使用](README_3.md)
     * [1. QWidget的概念](Chapter3/3.1.md)
     * [2. QWidget的使用](Chapter3/3.2.md)
+* [四. QString字符串类型](README_4.md)
+    * [1. QString概述](Chapter4/4.1.md)
+    * [2. QString方法](Chapter4/4.2.md)
 
