@@ -13,4 +13,7 @@
 * [四. QString字符串类型](README_4.md)
     * [1. QString概述](Chapter4/4.1.md)
     * [2. QString方法](Chapter4/4.2.md)
+* [五. QLabel](README_5.md)
+    * [1. QLabel的概念](Chapter5/5.1.md)
+    * [2. QLabel的创建和方法](Chapter5/5.2.md)
 
