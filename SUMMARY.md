@@ -16,4 +16,6 @@
 * [五. QLabel](README_5.md)
     * [1. QLabel的概念](Chapter5/5.1.md)
     * [2. QLabel的创建和方法](Chapter5/5.2.md)
+* [六. QPushButton](README_6.md)
+    * [1. QPushButton的概念](Chapter6/6.1.md)
 
